@@ -113,7 +113,8 @@ if($result=mysqli_query($obj->$con, $sql)){
         echo "</tr>";
         
 		/*mysqli_fetch_array; Obtener la siguiente fila de un conjunto de resultados como una matriz asociativa, numérica o ambas*/                        
-        while($row = mysqli_fetch_array($result)){
+        
+    while($row = mysqli_fetch_array($result)){
             echo "<tr>";
             echo "<td>" . $row['ci'] . "</td>";
             echo "<td>" . $row['paterno'] . "</td>";
